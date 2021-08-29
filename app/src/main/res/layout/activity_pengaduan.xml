@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PengaduanActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulir Pengaduan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_Nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:textSize="15sp"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_Alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"
+            android:textSize="15sp"
+            android:maxLines="2"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_Telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No Telepon / Handphone"
+            android:textSize="15sp"
+            android:maxLength="15"
+            android:inputType="phone"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_Nopelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Pelanggan"
+            android:textSize="15sp"
+            android:maxLength="15"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_Jenispengaduan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jenis Pengaduan"
+            android:textSize="15sp"
+            android:maxLines="3"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_Latarbelakang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Latar Belakang"
+            android:textSize="15sp"
+            android:maxLines="3"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Latar Belakang : Jelaskan secara detail kondisi anda saat ini)"
+        android:textColor="#000000"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btn_SimpanFormulir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIMPAN"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Mohon isi Data dengan Lengkap dan Benar"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="8sp" />
+
+
+</LinearLayout>
