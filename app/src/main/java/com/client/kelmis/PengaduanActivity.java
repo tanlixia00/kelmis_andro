@@ -2,6 +2,7 @@ package com.client.kelmis;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -101,7 +102,14 @@ public class PengaduanActivity extends AppCompatActivity {
                     if (data.getString("result").equalsIgnoreCase("ok"))
                     {
                         Log.d("deb URL", "result ok");
-                        Toast.makeText(getBaseContext(),"terima kasih, data sudah direkam!",Toast.LENGTH_LONG).show();
+//                        Toast.makeText(getBaseContext(),"terima kasih, data sudah direkam!",Toast.LENGTH_LONG).show();
+                        Intent i=new Intent(getBaseContext(), KonfirmasiPengaduanActivity.class);
+                        i.putExtra("nama", nama);
+                        i.putExtra("alamat", alamat);
+                        i.putExtra("telepon", telepon);
+                        i.putExtra("nopel", nopelanggan);
+                        startActivity(i);
+
                         finish();
                     }
                 } catch (JSONException e) {
